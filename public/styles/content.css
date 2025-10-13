@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+.card>h1 {
+    font-size: var(--h2size);
+}
+
+.card>h1:before {
+    content: "";
+    padding-right: 10px;
+}
+
+.card>h2 {
+    font-size: var(--h3size);
+}
+
+.card>h3 {
+    font-size: var(--h4size);
+}
+
+.card>h1.n1:before {
+    border-left: 7px solid var(--accentColor1);
+}
+
+.card>h1.n2:before {
+    border-left: 7px solid var(--accentColor2);
+}
+
+.card>h1.n3:before {
+    border-left: 7px solid var(--accentColor3);
+}
+
+.card>h1.n4:before {
+    border-left: 7px solid var(--accentColor4);
+}
+
+.card>h1.n5:before {
+    border-left: 7px solid var(--accentColor5);
+}
+
+.card>h1.n6:before {
+    border-left: 7px solid var(--accentColor6);
+}
+
+.card>h2 {
+    border-bottom: solid 1px var(--defaultWhite);
+}
+
+table {
+    width: 280px;
+}
+
+
+th.os {
+    background-color: var(--accentColor1);
+    width: 130px;
+}
+
+.vr {
+    background-color: var(--accentColor3);
+    width: 150px;
+}
+
+.osItem {
+    width: 130px;
+}
+
+.vrItem {
+    width: 150px;
+}
+
+.markdown-image {
+    width: 90%;
+    max-width: 500px;
+    object-fit: contain;
+    margin: 10px;
+}
+
+pre>code {
+    overflow-x: auto;
+    display: block;
+    padding: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .card>pre {
+        background-color: var(--cardDark);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .card>pre {
+        background-color: var(--cardLight);
+    }
+}

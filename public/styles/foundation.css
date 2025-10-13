@@ -1,0 +1,357 @@
+@charset "utf-8";
+
+table {
+    width: 220px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border: solid 1px var(--defaultWhite);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, sans-serif;
+    font-display: swap;
+}
+
+header,
+footer {
+    text-align: center;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 195px);
+    padding: 5px 0 10px 0;
+    width: 100%;
+}
+
+ul.tabContainaer {
+    padding: 0;
+    margin: 0 auto
+}
+
+li.tab {
+    display: inline-block;
+}
+
+.underline {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    width: 85px;
+}
+
+.underline::after {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 3px;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+
+.underline:hover::after {
+    transform: scale(1, 1);
+}
+
+#language {
+    padding: 5px;
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+    color: var(--defaultWhite);
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+
+#languageItem {
+    color: var(--defaultWhite);
+}
+
+#languageItem:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: var(--linkNotVisited);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--linkVisited);
+}
+
+h1 {
+    font-size: var(--h1size);
+}
+
+h2 {
+    font-size: var(--h2size);
+}
+
+h3 {
+    font-size: var(--h3size);
+}
+
+h4 {
+    font-size: var(--h4size);
+}
+
+p {
+    font-size: var(--psize);
+}
+
+hr {
+    margin: 3em 0 10px 0;
+}
+
+.caption {
+    font-size: 10px;
+}
+
+#backgroundImage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#goal {
+    padding: 0 3em;
+}
+
+#goalTitle {
+    font-size: var(--h1size);
+    font-weight: bold;
+    text-shadow: #202020 1px 0 10px;
+}
+
+.goalSubtitle {
+    font-size: var(--h3size);
+    text-shadow: #202020 1px 0 5px;
+}
+
+#copyright {
+    display: block;
+    font-size: var(--h5size);
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.material-symbols-outlined {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.iconLabel {
+    font-size: 8px;
+}
+
+.pageCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.pageCard>div {
+    width: 66%;
+}
+
+@media (max-width: 540px) or (orientation: portrait) {
+    .landscape-only {
+        display: none;
+    }
+
+    li.tab {
+        width: 55px;
+
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 540px) and (orientation: landscape) {
+    .portrait-only {
+        display: none;
+    }
+
+    li.tab {
+        width: 110px;
+        margin: 10px 5px;
+    }
+}
+
+@media (max-width: 1080px) and (orientation: portrait) {
+    #backgroundImage {
+        background-image: url(../images/出雲大社607P.avif);
+    }
+}
+
+@media (max-width: 1080px) and (orientation: landscape) {
+    #backgroundImage {
+        background-image: url(../images/出雲大社1080.avif);
+    }
+}
+
+@media (min-width: 1080px) and (max-width: 1620px) and (orientation: portrait) {
+    #backgroundImage {
+        background-image: image-set(url(../images/出雲大社1080P.avif) 1x, url(../images/出雲大社1440P.avif) 2x);
+    }
+}
+
+@media (min-width: 1080px) and (max-width: 1620px) and (orientation: landscape) {
+    #backgroundImage {
+        background-image: image-set(url(../images/出雲大社1920.avif) 1x, url(../images/出雲大社2160.avif) 2x);
+    }
+}
+
+@media (min-width: 1620px) and (max-width: 3456px) {
+    #backgroundImage {
+        background-image: image-set(url(../images/出雲大社1920.avif) 1x, url(../images/出雲大社3456.avif) 2x);
+    }
+}
+
+@media (min-width: 3456px) {
+    #backgroundImage {
+        background-image: image-set(url(../images/出雲大社3840.avif) 1x, url(../images/出雲大社5120.avif) 2x);
+    }
+}
+
+@media (min-width: 1200px) {
+    div#maincard {
+        flex: 1;
+        width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 1199px) {
+    div#maincard {
+        flex: 1;
+        margin: 10px;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: var(--erLight);
+    }
+
+    header,
+    footer,
+    .header,
+    .footer {
+        color: var(--defaultBlack);
+        flex-shrink: 0;
+    }
+
+    .header:visited,
+    .footer:visited {
+        color: var(--defaultBlack);
+    }
+
+    main {
+        background-color: var(--defaultWhite);
+        color: var(--defaultBlack);
+    }
+
+    h3 {
+        border-bottom: solid 1px var(--defaultBlack);
+    }
+
+    table th,
+    table td {
+        border: solid 1px var(--defaultBlack);
+    }
+
+    #goal {
+        color: var(--defaultWhite);
+    }
+
+    .underline::after {
+        background: var(--defaultBlack);
+    }
+
+    .isDarkMode {
+        display: none;
+    }
+
+    a.pageCard {
+        color: var(--defaultBlack)
+    }
+
+    a.pageCard {
+        background-color: var(--cardLight);
+    }
+
+    a.pageCard:hover {
+        background-color: var(--cardLightVisited);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--erDark);
+    }
+
+    header,
+    footer,
+    .header,
+    .footer {
+        color: var(--defaultWhite);
+    }
+
+    .header:visited,
+    .footer:visited {
+        color: var(--defaultWhite);
+    }
+
+    main {
+        background-color: var(--defaultBlack);
+        color: var(--defaultWhite);
+    }
+
+    #goal {
+        color: var(--defaultWhite);
+    }
+
+    .underline::after {
+        background: var(--defaultWhite);
+    }
+
+    .isLightMode {
+        display: none;
+    }
+
+    a.pageCard {
+        color: var(--defaultWhite)
+    }
+
+    a.pageCard {
+        background-color: var(--cardDark);
+    }
+
+    a.pageCard:hover {
+        background-color: var(--cardDarkVisited);
+    }
+}

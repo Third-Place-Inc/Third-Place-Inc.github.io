@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+.plice {
+    color: rgb(255, 80, 80);
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.appInfoButtom {
+    height: 60px;
+}
+
+.appInfoTop {
+    height: 100px;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonPadding {
+    margin: 10px;
+}
+/*
+.appIcon {
+    height: 100px;
+    width: 100px;
+}
+*/
+.pMove {
+    display: inline-block;
+}
+
+.appTitle {
+    border-bottom-style: none;
+    font-size: var(--h4size);
+    margin: calc((100px - var(--h4size))/2) 0;
+    vertical-align: middle;
+}
+
+iframe {
+    display: block;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+@media (max-width: 560px) {
+    iframe {
+        width: 100%;
+    }
+
+    .largeAppIcon {
+        width: 100%;
+    }
+}
+
+@media (min-width: 560px) {
+    iframe {
+        width: 560px;
+        height: 315px;
+    }
+
+    .largeAppIcon {
+        height: 250px;
+    }
+}
+
+.pToTitle {
+    font-size: var(--h4size);
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}

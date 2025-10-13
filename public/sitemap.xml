@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<url>
+		<loc>https://third-place-inc.github.io/</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://third-place-inc.github.io/en/" />
+		<xhtml:link rel="alternate" hreflang="ja" href="https://third-place-inc.github.io/" />
+		<changefreq>never</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://third-place-inc.github.io/product</loc>
+		<xhtml:link rel="alternate" hreflang="en"
+			href="https://third-place-inc.github.io/en/product" />
+		<xhtml:link rel="alternate" hreflang="ja"
+			href="https://third-place-inc.github.io/product" />
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+		<url>
+		<loc>https://third-place-inc.github.io/newsroom</loc>
+		<xhtml:link rel="alternate" hreflang="en"
+			href="https://third-place-inc.github.io/en/newsroom" />
+		<xhtml:link rel="alternate" hreflang="ja"
+			href="https://third-place-inc.github.io/newsroom" />
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+	<url>
+		<loc>https://third-place-inc.github.io/contact</loc>
+		<xhtml:link rel="alternate" hreflang="en"
+			href="https://third-place-inc.github.io/en/contact" />
+		<xhtml:link rel="alternate" hreflang="ja"
+			href="https://third-place-inc.github.io/contact" />
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+	</url>
+</urlset>

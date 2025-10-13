@@ -1,0 +1,21 @@
+User-agent: GPTBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: ClaudeBot
+User-agent: Bytespider
+User-agent: Baiduspider
+User-agent: YandexBot
+User-agent: Mail.RU_Bot
+User-agent: 360Spider
+User-agent: ThreatView
+User-agent: QQBrowser
+User-agent: Cookiebot
+User-agent: site.ru
+User-agent: Scrapy
+User-agent: PhxBot
+Disallow: /
+
+User-agent: *
+Disallow: /
+
+Sitemap: https://third-place-inc.github.io/sitemap.xml
